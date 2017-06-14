@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		input {
+			width: 25px;
+			text-align: center;
+		}
+
+		.wrapper {
+			width: 500px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class='wrapper'>
+		<input id='seconds1'>
+		<input id='seconds2'>
+		<input id='seconds3'>
+		<input id='seconds4'>
+		<input id='seconds5'>
+		<input id='seconds6'>
+		<input id='seconds7'>
+		<input id='seconds8'>
+		<input id='seconds9'>
+		<input id='seconds10'>
+	</div>
+
+</body>
+<script>
+	var rand;
+
+	var off1 = 0;
+	var off2 = 1;
+	var off3 = 2;
+	
+	rand = Math.floor(Math.random() * 100)
+	var off4 = rand;
+
+	rand = Math.floor(Math.random() * 10)
+	var off5 = rand;
+
+	rand = Math.floor(Math.random() * 1000)
+	var off6 = rand;
+
+	rand = Math.floor(Math.random() * 100)
+	var off7 = rand;
+	
+	rand = Math.floor(Math.random() * 500)
+	var off8 = rand;
+
+	rand = Math.floor(Math.random() * 10)
+	var off9 = rand;
+
+	rand = Math.floor(Math.random() * 700)
+	var off10 = rand;
+
+	setInterval(
+		function (){
+			var num = document.getElementById('seconds1').value;
+	 		num++;
+	 		document.getElementById('seconds1').value = num;
+	}, 100+off1);
+
+	setInterval(
+		function (){
+			var num = document.getElementById('seconds2').value;
+	 		num++;
+	 		document.getElementById('seconds2').value = num;
+	}, 100+off2);
+	setInterval(
+		function (){
+			var num = document.getElementById('seconds3').value;
+	 		num++;
+	 		document.getElementById('seconds3').value = num;
+	}, 100+off3);
+		setInterval(
+		function (){
+			var num = document.getElementById('seconds4').value;
+	 		num++;
+	 		document.getElementById('seconds4').value = num;
+	}, 100+off4);
+			setInterval(
+		function (){
+			var num = document.getElementById('seconds5').value;
+	 		num++;
+	 		document.getElementById('seconds5').value = num;
+	}, 100+off5);
+
+			
+	setInterval(
+		function (){
+			var num = document.getElementById('seconds6').value;
+	 		num++;
+	 		document.getElementById('seconds6').value = num;
+	}, 100+off6);
+	
+	setInterval(
+		function (){
+			var num = document.getElementById('seconds7').value;
+	 		num++;
+	 		document.getElementById('seconds7').value = num;
+	}, 100+off7);
+
+	setInterval(
+		function (){
+			var num = document.getElementById('seconds8').value;
+	 		num++;
+	 		document.getElementById('seconds8').value = num;
+	}, 100+off8);
+	
+	setInterval(
+		function (){
+			var num = document.getElementById('seconds9').value;
+	 		num++;
+	 		document.getElementById('seconds9').value = num;
+	}, 100+off9);
+
+	setInterval(
+		function (){
+			var num = document.getElementById('seconds10').value;
+	 		num++;
+	 		document.getElementById('seconds10').value = num;
+	}, 100+off10);
+</script>
+</html>
